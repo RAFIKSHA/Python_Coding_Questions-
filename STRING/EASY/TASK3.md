@@ -18,6 +18,7 @@ Write a program that accepts a string and reverses the order of its words. The c
 
 Example 1:
 
+
 Input:
 "hello world"
 
@@ -26,16 +27,18 @@ world hello
 
 Example 2:
 
+
 Input:
-Python is awesome
+"Python is awesome"
 
 Output:
 awesome is Python
 
+
 Example 3:
 
 Input:
-I love programming
+"I love programming"
 
 Output:
 programming love I
