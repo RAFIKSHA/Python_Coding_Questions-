@@ -1,11 +1,9 @@
-Task 2: Proper Name Capitalization
-
 Problem Statement:
 You are given a string containing words separated by spaces. Your task is to ensure that:
 	• The first letter of each alphabetic word is capitalized.
 	• Words that start with numbers or non-alphabetic characters should remain unchanged.
 	
-For example:
+Example:
 	• Input: "vinay raykar 12abc john doe 2abc"
 	• Output: "Vinay Raykar 12abc John Doe 2abc"
 	
@@ -63,6 +61,5 @@ Solution:
 		    return " ".join(words)
 		
 		name = input()
-  		print(capitalize_name(name))
-    
-    
+		print(capitalize_name(name))
+![Uploading image.png…]()
