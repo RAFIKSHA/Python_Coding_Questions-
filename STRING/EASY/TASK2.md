@@ -63,6 +63,6 @@ Solution:
 		    return " ".join(words)
 		
 		name = input()
-    		print(capitalize_name(name))
+  		print(capitalize_name(name))
     
     
