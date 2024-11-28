@@ -1,4 +1,10 @@
-### Problem Statement:
+Got it! Here's the updated version with a task name for each of the problems. This format can be continued for future tasks as well.
+
+---
+
+### Task 9: Remove All Spaces
+
+**Problem Statement:**
 
 Spaces in strings are often unnecessary in certain contexts, such as when processing input data or formatting text for storage. Your task is to write a program that takes a string as input and removes all spaces from it, producing a clean, uninterrupted string of characters.
 
@@ -28,12 +34,12 @@ A single line of output containing the same string `s`, but with all spaces remo
 
 #### Input:
 ```
-hello world
+customer service support
 ```
 
 #### Output:
 ```
-helloworld
+customerservicesupport
 ```
 
 ---
@@ -42,12 +48,12 @@ helloworld
 
 #### Input:
 ```
-python is fun
+united states of america
 ```
 
 #### Output:
 ```
-pythonisfun
+unitedstatesofamerica
 ```
 
 ---
@@ -56,12 +62,12 @@ pythonisfun
 
 #### Input:
 ```
-space here
+new york city
 ```
 
 #### Output:
 ```
-spacehere
+newyorkcity
 ```
 
 ---
@@ -70,12 +76,12 @@ spacehere
 
 #### Input:
 ```
-a b c
+email address
 ```
 
 #### Output:
 ```
-abc
+emailaddress
 ```
 
 ---
@@ -84,12 +90,12 @@ abc
 
 #### Input:
 ```
-remove spaces please
+home delivery service
 ```
 
 #### Output:
 ```
-removespacesplease
+homedeliveryservice
 ```
 
 ---
@@ -98,12 +104,12 @@ removespacesplease
 
 #### Input:
 ```
-no spaces in this string
+product ID number
 ```
 
 #### Output:
 ```
-nospacesinthisstring
+productIDnumber
 ```
 
 ---
@@ -112,12 +118,12 @@ nospacesinthisstring
 
 #### Input:
 ```
-this is a test
+phone number contact
 ```
 
 #### Output:
 ```
-thisisatest
+phonenumbercontact
 ```
 
 ---
@@ -126,12 +132,12 @@ thisisatest
 
 #### Input:
 ```
-spaces  are   everywhere
+global positioning system
 ```
 
 #### Output:
 ```
-spacesareeverywhere
+globalpositioningsystem
 ```
 
 ---
@@ -140,12 +146,12 @@ spacesareeverywhere
 
 #### Input:
 ```
-hello   world   again
+social media marketing
 ```
 
 #### Output:
 ```
-helloworldagain
+socialmediamarketing
 ```
 
 ---
@@ -154,12 +160,12 @@ helloworldagain
 
 #### Input:
 ```
-oneword
+financial planning advisor
 ```
 
 #### Output:
 ```
-oneword
+financialplanningadvisor
 ```
 
 ---
@@ -168,12 +174,12 @@ oneword
 
 #### Input:
 ```
-   multiple  spaces
+web development team
 ```
 
 #### Output:
 ```
-multiplespaces
+webdevelopmentteam
 ```
 
 ---
@@ -187,3 +193,5 @@ def remove_spaces(s):
 input_string = input()
 print(remove_spaces(input_string))
 ```
+
+---
