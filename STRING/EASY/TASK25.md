@@ -1,3 +1,4 @@
+
 ---
 
 ### Task 25: Extract Numbers from a String
@@ -106,7 +107,7 @@ def extract_numbers(input_string):
             result.append(numbers)
             numbers = ""
     
-    if numbers:
+    if numbers:  # This ensures that the last number is added if the string ends with digits
         result.append(numbers)
     
     print(" ".join(result))
@@ -114,3 +115,5 @@ def extract_numbers(input_string):
 input_string = input()
 extract_numbers(input_string)
 ```
+
+---
