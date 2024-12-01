@@ -160,7 +160,10 @@ aAab
 
 ### **Solution**
 
-```def smallest_window(s1, s2):
+
+
+```python
+def smallest_window(s1, s2):
     if not s1 or not s2:
         return "Not Possible"
 
@@ -194,9 +197,10 @@ aAab
 
     return result if result else "Not Possible"
 
-s1 = input()
-s2 = input()
+s1 = input("Enter string s1: ")
+s2 = input("Enter string s2: ")
 print(smallest_window(s1, s2))
+```
 
 ```
 
