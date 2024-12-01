@@ -197,11 +197,9 @@ def smallest_window(s1, s2):
 
     return result if result else "Not Possible"
 
-s1 = input("Enter string s1: ")
-s2 = input("Enter string s2: ")
+s1 = input()
+s2 = input()
 print(smallest_window(s1, s2))
-```
-
 ```
 
 ---
