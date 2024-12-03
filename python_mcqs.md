@@ -133,3 +133,76 @@ In Python, variable names are case sensitive, which means that `variable` and `V
 
 ---
 
+## Question 12: Converting String to Float and Adding to Integer
+
+**Question:**  
+Python supports several data types that are used to define the nature of data that can be stored in a variable. When considering the integer (`int`), floating-point (`float`), and string (`str`) data types, which of the following pieces of code will correctly convert a string representation of a number to a float, and subsequently add it to an integer before printing the result?
+
+**Options:**
+- A. `result = int("10.5") + 5; print(result)`
+- B. `result = float("10.5") + 5; print(result)`
+- C. `result = str(10.5 + 5); print(result)`
+- D. `result = "10.5" + str(5); print(result)`
+
+**Correct Answer:** B
+
+**Explanation:**  
+Option B is correct because it converts the string `"10.5"` to a float using the `float()` function and then adds `5` (an integer) to the resulting float. The sum, therefore, is a floating-point number, which can be correctly computed and printed. Option A will cause a `ValueError` as the `int()` function cannot convert a floating-point string directly to an integer without truncation.
+
+---
+
+## Question 13: Dynamic Typing in Python
+
+**Question:**  
+Considering Python’s dynamic typing system, which of the following code snippets demonstrates the flexibility of type assignments in Python, allowing variables to be reassigned to different data types within the same script?
+
+**Options:**
+- A. `x = 10; x = "ten"; print(x)`
+- B. `x = 10; x = x + "10"; print(x)`
+- C. `x = "10"; x = int(x); x = x + 10; print(x)`
+- D. `x = "10"; x = int(x); x = x + "10"; print(x)`
+
+**Correct Answer:** A
+
+**Explanation:**  
+In Python, you can change the data type of a variable through reassignment, demonstrating Python's dynamic type system. In Option A, the variable `x` is initially an integer and is later reassigned as a string with no errors. The other options either result in type errors or incorrect conversions.
+
+---
+
+## Question 14: Default Parameters in Python Functions
+
+**Question:**  
+Python functions are defined using the `def` keyword followed by the function name and parentheses. Which of the following definitions includes a default parameter, allowing the function to be called with fewer arguments than parameters defined?
+
+**Options:**
+- A. `def print_value(x="Hello"): print(x)`
+- B. `def print_value(x, y): print(x)`
+- C. `def print_value(x, y="Hello", z): print(x + y + z)`
+- D. `def print_value(x): y = "Hello"; print(x + y)`
+
+**Correct Answer:** A
+
+**Explanation:**  
+Option A correctly defines a function with a default parameter. A default parameter is specified by providing a default value in the function definition, allowing the function to be called either with or without that specific argument. The other options either require all parameters to be provided or have syntax errors (like Option C, where default parameters must not precede non-default parameters).
+
+---
+
+## Question 15: Iterating Over a List to Compute the Sum
+
+**Question:**  
+When iterating over a list in Python to compute the sum of its elements, which of the following loop constructions is correctly formulated to avoid an `IndexError` and successfully compute the total sum?
+
+**Options:**
+- A. `list_values = [1, 2, 3, 4, 5]; total = 0; for i in range(len(list_values) + 1): total += list_values[i]; print(total)`
+- B. `list_values = [1, 2, 3, 4, 5]; total = 0; for value in list_values: total += value; print(total)`
+- C. `list_values = [1, 2, 3, 4, 5]; total = 0; for i in range(1, len(list_values)): total += list_values[i]; print(total)`
+- D. `list_values = [1, 2, 3, 4, 5]; total = 0; for i in range(len(list_values) - 1): total += list_values[i]; print(total)`
+
+**Correct Answer:** B
+
+**Explanation:**  
+Option B is correct as it uses a for loop to iterate directly over the elements of the list, adding each element to the total variable. This avoids any issues with indexing out of the range of the list, which can occur in the other options where the range in the loop is not correctly set to match the list indices.
+
+---
+
+
