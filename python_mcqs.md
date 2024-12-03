@@ -204,5 +204,110 @@ When iterating over a list in Python to compute the sum of its elements, which o
 Option B is correct as it uses a for loop to iterate directly over the elements of the list, adding each element to the total variable. This avoids any issues with indexing out of the range of the list, which can occur in the other options where the range in the loop is not correctly set to match the list indices.
 
 ---
+Here is the reframed set of questions with their explanations:
 
+---
+
+**Question 23:**  
+In Python, list comprehension is a concise method for creating lists. Consider the following code:
+
+```python
+squared_numbers = [x**2 for x in range(10) if x % 2 == 0]
+```
+
+How does list comprehension in this example compare to traditional for-loop-based list generation? What are the advantages of using list comprehension when working with larger datasets or complex transformations?
+
+- **A.** List comprehension provides a less efficient way to generate lists compared to traditional loops, often leading to increased time complexity.
+- **B.** List comprehension offers a readable and efficient approach to generating lists in a single line, significantly reducing the code length and enhancing performance due to the optimized Python internals.
+- **C.** List comprehension cannot handle conditions like if statements, and its primary benefit is only to transform one list into another of the same length without changes.
+- **D.** List comprehension is limited to generating numerical lists and cannot be used for string manipulation or complex object creation within a list.
+
+**Correct Answer:**  
+**B.**  
+**Explanation:**  
+List comprehension allows for creating lists in a compact and readable way, performing faster than traditional loops due to Python's internal optimization. It supports conditions and complex transformations, making it ideal for data manipulation.
+
+---
+
+**Question 24:**  
+The `try` and `except` blocks in Python are used for exception handling to catch and manage errors during program execution. What is the main advantage of using these blocks? How does Python's exception hierarchy help in handling different types of exceptions, such as `ZeroDivisionError`, `FileNotFoundError`, and generic `Exception`?
+
+- **A.** `try` and `except` blocks help in preventing program crashes by catching exceptions, and Python's exception hierarchy allows specific exceptions to be caught before generic ones to handle errors more precisely.
+- **B.** Using `try` and `except` guarantees that no error messages will ever be displayed to the user, as all exceptions will be ignored without any output.
+- **C.** The `try` block only catches runtime errors like syntax mistakes, and the `except` block logs these to a separate file for later review.
+- **D.** `try` and `except` blocks are used to improve performance by skipping over sections of code that are prone to failure, and they do not handle exceptions beyond those specified within the `except` block.
+
+**Correct Answer:**  
+**A.**  
+**Explanation:**  
+The `try` block allows code to run while the `except` block handles any exceptions that occur. Python’s exception hierarchy allows more specific exceptions, such as `ZeroDivisionError`, to be caught before generic ones like `Exception`, enabling precise error handling.
+
+---
+
+**Question 25:**  
+In Python, the `global` and `nonlocal` keywords serve different purposes when dealing with variable scope. How do these keywords function within nested functions or modules? What is the correct way to use them to modify variable values in different scopes, such as within the outer function or global module level?
+
+- **A.** The `global` keyword is used to modify variables within nested functions, while `nonlocal` can be used to access global variables directly from any nested scope.
+- **B.** The `global` keyword allows modifying a variable at the module level within a function, while `nonlocal` allows access to the nearest enclosing scope variable that is not global, helping manage nested function variables.
+- **C.** The `global` keyword is mainly for declaring constants across multiple functions, and `nonlocal` is used exclusively for modifying class-level variables from within methods.
+- **D.** The `global` and `nonlocal` keywords are interchangeable in Python, allowing any variable to be modified regardless of its original scope.
+
+**Correct Answer:**  
+**B.**  
+**Explanation:**  
+The `global` keyword is used to modify variables declared at the module level. The `nonlocal` keyword allows access to variables from the nearest enclosing scope that is not global, helping with nested function variables.
+
+---
+
+**Question 26:**  
+What is the significance of the `None` keyword in Python?
+
+- **A.** It indicates the absence of a value or a null value in the variable.
+- **B.** It is a special data type that can only be assigned to string variables.
+- **C.** It represents the zero numerical value in numeric calculations.
+- **D.** It is used to define an infinite loop in Python programming.
+
+**Correct Answer:**  
+**A.**  
+**Explanation:**  
+In Python, `None` signifies the absence of a value or a null state. It is distinct from `False` or `zero` and is used as a placeholder to indicate that no specific value is present.
+
+---
+
+**Question 27:**  
+What is the output of the following Python code snippet?
+
+```python
+x = 10
+y = 50
+if x ** 2 > 100 and y < 100:
+    print("Yes")
+else:
+    print("No")
+```
+
+- **A.** Yes
+- **B.** No
+- **C.** True
+- **D.** Error
+
+**Correct Answer:**  
+**B.**  
+**Explanation:**  
+The condition `x ** 2 > 100` evaluates to `False` because 100 is not greater than 100. Despite `y < 100` being `True`, the `and` condition requires both parts to be true. Therefore, the `else` branch is executed, and "No" is printed.
+
+---
+
+**Question 28:**  
+In Python, what does the `append()` method do when applied to a list?
+
+- **A.** It merges another list into the current list at a specified position.
+- **B.** It adds a new element to the end of the list, expanding its size.
+- **C.** It calculates the total sum of all numerical elements within the list.
+- **D.** It removes the last element of the list and returns it.
+
+**Correct Answer:**  
+**B.**  
+**Explanation:**  
+The `append()` method in Python adds a single element to the end of a list. This method modifies the list in place and increases its length by one.
 
