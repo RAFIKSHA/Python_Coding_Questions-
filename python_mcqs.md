@@ -204,7 +204,6 @@ When iterating over a list in Python to compute the sum of its elements, which o
 Option B is correct as it uses a for loop to iterate directly over the elements of the list, adding each element to the total variable. This avoids any issues with indexing out of the range of the list, which can occur in the other options where the range in the loop is not correctly set to match the list indices.
 
 ---
-Here are the questions with the answers and explanations:
 
 ---
 
