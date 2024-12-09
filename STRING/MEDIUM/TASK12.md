@@ -146,8 +146,6 @@ Write a program to multiply two numbers represented as strings, `s1` and `s2`. T
 
 ```python
 
- Here’s the implementation without comments:
-
 ```python
 def multiply_strings(s1, s2):
     is_negative = (s1[0] == '-') ^ (s2[0] == '-')
