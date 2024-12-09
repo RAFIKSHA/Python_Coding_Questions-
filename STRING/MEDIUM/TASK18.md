@@ -1,4 +1,4 @@
-### Task: **Binary String Addition**
+### Task 18: **Binary String Addition**
 
 #### Problem Statement:
 Given two binary strings `s1` and `s2` consisting of only `0`s and `1`s, calculate their sum and return the resultant binary string. The output string should not have any leading zeros.
